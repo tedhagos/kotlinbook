@@ -12,10 +12,15 @@ fun main(args: Array<String>) {
 //  println(util.terminatorify(msg))
 
   println(msg.homerify())
+  println(msg.chanthofy())
+  println(msg.terminatorify())
 
 }
 
 fun String.homerify() = "$this -- woohoo!"
+fun String.chanthofy() = "Chan, $this , tho"
+fun String.terminatorify() = "$this -- I'll be back"
+
 
 //class StringUtil {
 //  fun homerify(msg: String) = "$msg -- woohoo!"
