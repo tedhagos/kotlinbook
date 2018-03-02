@@ -7,12 +7,11 @@ fun main(args: Array<String>) {
   var e3 = e1 + e2
 
   println(e3.name)
-
 }
 
 class Employee(var name: String) {
 
-  operator infix fun plus(emp: Employee) : Employee {
+   infix operator  fun plus(emp: Employee) : Employee {
     this.name += "\n${emp.name}"
     return this
   }
