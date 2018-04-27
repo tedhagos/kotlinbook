@@ -1,12 +1,14 @@
 package tlb.lambda
 
 fun main(args: Array<String>) {
-  executor({
-    it:String -> println(it)
+  executor({ arg:String ->
+    println("Hello $arg")
   })
 }
 
 
-fun executor(m:(args:String) -> Unit) {
-  m(args)
+fun executor(foo:(m:String) -> Unit) {
+  println("begin")
+  foo("World")
+  println("end")
 }

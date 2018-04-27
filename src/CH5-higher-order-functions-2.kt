@@ -2,7 +2,7 @@ package tlb.higherorder2
 
 
 fun main(args: Array<String>) {
-  executioner(::doThis)
+  executor(::doThis)
 }
 
 val foo:()-> Unit = {
@@ -29,6 +29,6 @@ fun doThis() {
 //  println("action property")
 //}
 
-fun executioner(action:() -> Unit) {
+fun executor(action:() -> Unit) {
   action.invoke()
 }

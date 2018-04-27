@@ -1,7 +1,7 @@
 package tlb.higherorder
 
 fun main(args: Array<String>) {
-  executioner(doThis)
+  executor(doThis)
 }
 
 //val doThis:() -> Unit  = {
@@ -12,6 +12,6 @@ val doThis = {
   println("doThis")
 }
 
-fun executioner(action:() -> Unit) {
+fun executor(action:() -> Unit) {
   action.invoke()
 }
