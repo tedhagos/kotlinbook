@@ -1,0 +1,25 @@
+buildscript {
+  ext.kotlin_version = '1.2.40'
+
+  repositories {
+    mavenCentral()
+  }
+
+  dependencies {
+    classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+  }
+}
+
+apply plugin: 'kotlin'
+
+sourceSets {
+  main.java.srcDirs += 'src'
+}
+
+repositories {
+  mavenCentral()
+}
+
+dependencies {
+  compile "org.jetbrains.kotlin:kotlin-stdlib-jdk9"
+}
