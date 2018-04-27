@@ -1,13 +1,12 @@
 package tlb.lambda
 
 fun main(args: Array<String>) {
-  //println(sum2(1,2))
+  executor({
+    it:String -> println(it)
+  })
 }
 
 
-
-
-
-fun abstractor(m:()-> Unit) {
-  m()
+fun executor(m:(args:String) -> Unit) {
+  m(args)
 }
